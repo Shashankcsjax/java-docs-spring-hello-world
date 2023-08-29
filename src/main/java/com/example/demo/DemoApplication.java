@@ -7,19 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.joda.time.DateTime;
 
 @SpringBootApplication
-@RestController
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
-
-	@RequestMapping("/")
-	DateTime currentDateTime = new DateTime();
+        // Create a new DateTime instance
+        DateTime currentDateTime = new DateTime();
 
         // Print the current date and time
         System.out.println("Current Date and Time: " + currentDateTime);
-	String sayHello() {
-		return "Hello Halim how are you?";
 	}
 }
