@@ -6,7 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
+@SpringBootApplication 
 @RestController
 public class DemoApplication extends SpringBootServletInitializer {
 	@GetMapping("/current-time")
