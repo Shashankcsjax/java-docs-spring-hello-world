@@ -11,11 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+        // Create a new DateTime instance
+        DateTime currentDateTime = new DateTime();
 
-	@RequestMapping("/")
-	String sayHello() {
-		return "Hello Halim how are you now?";
+        // Print the current date and time
+        System.out.println("Current Date and Time: " + currentDateTime);
 	}
 }
