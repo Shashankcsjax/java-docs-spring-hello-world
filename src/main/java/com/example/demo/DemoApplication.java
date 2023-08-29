@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApplication {
 
     @RequestMapping("/")
-    public String calculateAge(@RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthdate) {
+    public Static void currentDate(@RequestParam @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate birthdate) {
         LocalDate currentDate = new LocalDate();
         Years age = Years.yearsBetween(birthdate, currentDate);
         
