@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class DemoApplication extends SpringBootServletInitializer {
-
+	@GetMapping("/current-time")
 	public static void main(String[] args) {
         // Create a new DateTime instance
         DateTime currentDateTime = new DateTime();
