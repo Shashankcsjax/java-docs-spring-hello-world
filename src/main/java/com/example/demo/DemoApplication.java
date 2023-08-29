@@ -8,7 +8,7 @@ import org.joda.time.DateTime;
 
 @SpringBootApplication
 public class DemoApplication {
-
+	@GetMapping("/current-time")
 	public static void main(String[] args) {
         // Create a new DateTime instance
         DateTime currentDateTime = new DateTime();
